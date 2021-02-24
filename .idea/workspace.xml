@@ -7,13 +7,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f4ff7a1-01c6-4ce2-a2ce-db0b2f267f8c" name="Default Changelist" comment="增加众多算子demo">
-      <change afterPath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java" afterDir="false" />
+    <list default="true" id="8f4ff7a1-01c6-4ce2-a2ce-db0b2f267f8c" name="Default Changelist" comment="加入 cross笛卡尔 算子demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/CrossTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/CrossTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-dataset/target/classes/com/intsmaze/flink/dataset/operator/CrossTemplate$CustomCrossFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/target/classes/com/intsmaze/flink/dataset/operator/CrossTemplate$CustomCrossFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-dataset/target/classes/com/intsmaze/flink/dataset/operator/CrossTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/target/classes/com/intsmaze/flink/dataset/operator/CrossTemplate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/目录.md" beforeDir="false" afterPath="$PROJECT_DIR$/目录.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,35 +254,9 @@
       <recent name="D:\develop\flink-book\flink-sql\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SetApiDemo.testDefaultCross">
-    <configuration name="DistinctTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.DistinctTemplate" />
-      <module name="flink-dataset" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilterTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.FilterTemplate" />
-      <module name="flink-dataset" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlatMapTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.FlatMapTemplate" />
+  <component name="RunManager" selected="JUnit.SetApiDemo.testCogroup">
+    <configuration name="CoGroupTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.CoGroupTemplate" />
       <module name="flink-dataset" />
       <extension name="coverage">
         <pattern>
@@ -327,6 +297,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SetApiDemo.testCogroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flink-dataset" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
+      <option name="METHOD_NAME" value="testCogroup" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SetApiDemo.testDefaultCross" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flink-dataset" />
       <extension name="coverage">
@@ -343,13 +329,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SetApiDemo.testUnion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flink-dataset" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
+      <option name="METHOD_NAME" value="testUnion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SetApiDemo.testCogroup" />
+        <item itemvalue="Application.CoGroupTemplate" />
+        <item itemvalue="JUnit.SetApiDemo.testUnion" />
         <item itemvalue="JUnit.SetApiDemo.testDefaultCross" />
         <item itemvalue="JUnit.CrossTemplate.testDefaultCross" />
-        <item itemvalue="Application.DistinctTemplate" />
-        <item itemvalue="Application.FlatMapTemplate" />
-        <item itemvalue="Application.FilterTemplate" />
       </list>
     </recent_temporary>
   </component>
@@ -400,7 +402,7 @@
       <workItem from="1606613695867" duration="63000" />
       <workItem from="1606614846609" duration="1695000" />
       <workItem from="1612353361228" duration="8193000" />
-      <workItem from="1614137854392" duration="9302000" />
+      <workItem from="1614137854392" duration="12591000" />
     </task>
     <task id="LOCAL-00001" summary="备份">
       <created>1596470102418</created>
@@ -619,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614155018832</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="加入 cross笛卡尔 算子demo">
+      <created>1614156871476</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1614156871476</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -737,7 +746,8 @@
     <MESSAGE value="私人专用" />
     <MESSAGE value="add wordcount" />
     <MESSAGE value="增加众多算子demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加众多算子demo" />
+    <MESSAGE value="加入 cross笛卡尔 算子demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入 cross笛卡尔 算子demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -748,9 +758,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/CoGroupTemplate.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
