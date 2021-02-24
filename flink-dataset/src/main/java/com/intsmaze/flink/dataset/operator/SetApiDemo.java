@@ -2,6 +2,8 @@ package com.intsmaze.flink.dataset.operator;
 
 import org.apache.flink.api.common.functions.CoGroupFunction;
 import org.apache.flink.api.common.functions.CrossFunction;
+import org.apache.flink.api.common.functions.GroupReduceFunction;
+import org.apache.flink.api.common.operators.Order;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.operators.DataSource;
 import org.apache.flink.api.java.tuple.Tuple2;
@@ -72,6 +74,7 @@ public class SetApiDemo {
     }
 
 
+    // cogroup 有inner的感觉，但是比inner join的定制化结果能力更强
     @Test
     public void testCogroup() throws Exception {
         final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
@@ -120,6 +123,45 @@ public class SetApiDemo {
         env.execute();
     }
 
+    // 各种针对 group by 的后操作
+    @Test
+    public void testGroupReduce() throws Exception {
+        final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
+        ArrayList<Tuple2<String, Integer>> bupt_boys = new ArrayList<>();
+        ArrayList<Tuple2<Integer, String>> bnu_girls = new ArrayList<>();
+
+        bupt_boys.add(new Tuple2<>("xuliang",23));
+        bupt_boys.add(new Tuple2<>("xl",25));
+        bupt_boys.add(new Tuple2<>("liangge",25));
+
+        DataSource<Tuple2<String, Integer>> src = env.fromCollection(bupt_boys);
+
+        //reduce group
+        src.groupBy(1).reduceGroup(new GroupReduceFunction<Tuple2<String, Integer>, Tuple2<String, Integer>>() {
+            @Override
+            public void reduce(Iterable<Tuple2<String, Integer>> iterable, Collector<Tuple2<String, Integer>> collector) throws Exception {
+
+                String name = "";
+                Integer age = 0;
+
+                Iterator<Tuple2<String, Integer>> iter = iterable.iterator();
+                while (iter.hasNext()){
+                    Tuple2<String, Integer> next = iter.next();
+                    name = name + next.f0 + "#";
+                    age = next.f1;
+                }
+
+                collector.collect(new Tuple2<>(name,age));
+
+            }
+        }).print("reduce group结果");
+
+
+        // sort group 也可以与reduce-group连着用
+        src.groupBy(1).sortGroup(0, Order.ASCENDING).first(1).print("sort group简单尝试"); // 相当于把每个组的第一个元素取出来
+        env.execute();
+
+    }
     
     
 
