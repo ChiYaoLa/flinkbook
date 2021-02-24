@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f4ff7a1-01c6-4ce2-a2ce-db0b2f267f8c" name="Default Changelist" comment="加入 cross笛卡尔 算子demo">
+    <list default="true" id="8f4ff7a1-01c6-4ce2-a2ce-db0b2f267f8c" name="Default Changelist" comment="sort group demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java" afterDir="false" />
     </list>
@@ -254,7 +254,7 @@
       <recent name="D:\develop\flink-book\flink-sql\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SetApiDemo.testCogroup">
+  <component name="RunManager" selected="JUnit.SetApiDemo.testJoin">
     <configuration name="CoGroupTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.CoGroupTemplate" />
       <module name="flink-dataset" />
@@ -281,7 +281,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrossTemplate.testDefaultCross" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JoinTemplate.testJoinWithJoinFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flink-dataset" />
       <extension name="coverage">
         <pattern>
@@ -290,8 +290,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.CrossTemplate" />
-      <option name="METHOD_NAME" value="testDefaultCross" />
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.JoinTemplate" />
+      <option name="METHOD_NAME" value="testJoinWithJoinFunction" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -313,7 +313,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetApiDemo.testDefaultCross" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SetApiDemo.testGroupReduce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flink-dataset" />
       <extension name="coverage">
         <pattern>
@@ -323,13 +323,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
       <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
-      <option name="METHOD_NAME" value="testDefaultCross" />
+      <option name="METHOD_NAME" value="testGroupReduce" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetApiDemo.testUnion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SetApiDemo.testJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flink-dataset" />
       <extension name="coverage">
         <pattern>
@@ -339,7 +339,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
       <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
-      <option name="METHOD_NAME" value="testUnion" />
+      <option name="METHOD_NAME" value="testJoin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -347,11 +347,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SetApiDemo.testJoin" />
+        <item itemvalue="JUnit.JoinTemplate.testJoinWithJoinFunction" />
+        <item itemvalue="JUnit.SetApiDemo.testGroupReduce" />
         <item itemvalue="JUnit.SetApiDemo.testCogroup" />
         <item itemvalue="Application.CoGroupTemplate" />
-        <item itemvalue="JUnit.SetApiDemo.testUnion" />
-        <item itemvalue="JUnit.SetApiDemo.testDefaultCross" />
-        <item itemvalue="JUnit.CrossTemplate.testDefaultCross" />
       </list>
     </recent_temporary>
   </component>
@@ -402,7 +402,7 @@
       <workItem from="1606613695867" duration="63000" />
       <workItem from="1606614846609" duration="1695000" />
       <workItem from="1612353361228" duration="8193000" />
-      <workItem from="1614137854392" duration="12591000" />
+      <workItem from="1614137854392" duration="14902000" />
     </task>
     <task id="LOCAL-00001" summary="备份">
       <created>1596470102418</created>
@@ -628,7 +628,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614156871476</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="加入  union Cogroup蒜子demo">
+      <created>1614162545742</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1614162545742</updated>
+    </task>
+    <task id="LOCAL-00034" summary="sort group demo">
+      <created>1614163558859</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1614163558859</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -747,7 +761,9 @@
     <MESSAGE value="add wordcount" />
     <MESSAGE value="增加众多算子demo" />
     <MESSAGE value="加入 cross笛卡尔 算子demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入 cross笛卡尔 算子demo" />
+    <MESSAGE value="加入  union Cogroup蒜子demo" />
+    <MESSAGE value="sort group demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="sort group demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

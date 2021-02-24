@@ -1,8 +1,6 @@
 package com.intsmaze.flink.dataset.operator;
 
-import org.apache.flink.api.common.functions.CoGroupFunction;
-import org.apache.flink.api.common.functions.CrossFunction;
-import org.apache.flink.api.common.functions.GroupReduceFunction;
+import org.apache.flink.api.common.functions.*;
 import org.apache.flink.api.common.operators.Order;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.operators.DataSource;
@@ -18,7 +16,8 @@ import java.util.List;
 
 /**
  * Project: flink-book
- * 集合api
+ * 集合api    https://ci.apache.org/projects/flink/flink-docs-stable/dev/batch/dataset_transformations.html#groupcombine-on-a-grouped-dataset
+ * 
  * @author xuliang98
  * File Created at 2021/2/24-4:35 下午
  * @Desc
@@ -40,7 +39,7 @@ public class SetApiDemo {
     }
 
 
-    
+    // cross 是交叉链接，笛卡尔积
     @Test
     public void testDefaultCross() throws Exception {
         // 不同的cross策略
@@ -61,6 +60,51 @@ public class SetApiDemo {
         
         env.execute();
     }
+
+    // join 就是 inner join ，还有其他left join ，right join这些，是肯定要on 什么条件才发生的连接匹配，跟cross不同
+    @Test
+    public void testJoin() throws Exception {
+        final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
+        ArrayList<Tuple2<String, Integer>> bupt_boys = new ArrayList<>();
+        ArrayList<Tuple2<Integer, String>> bnu_girls = new ArrayList<>();
+
+        bupt_boys.add(new Tuple2<>("xuliang",23));
+        bupt_boys.add(new Tuple2<>("xl",25));
+        bupt_boys.add(new Tuple2<>("XL",25));
+
+        bnu_girls.add(new Tuple2<>(23,"xuemei1"));
+        bnu_girls.add(new Tuple2<>(23,"xuemei2"));
+        bnu_girls.add(new Tuple2<>(25,"xuejie"));
+
+
+        DataSource<Tuple2<String, Integer>> bupt_boy_src = env.fromCollection(bupt_boys);
+        DataSource<Tuple2<Integer, String>> bnu_girls_src = env.fromCollection(bnu_girls);
+        
+        //最简单的inner join
+//        bupt_boy_src.join(bnu_girls_src).where(1).equalTo(0)
+//                .with(new JoinFunction<Tuple2<String, Integer>, Tuple2<Integer, String>, Tuple2<String,String>>() {
+//                    @Override
+//                    public Tuple2<String, String> join(Tuple2<String, Integer> boy, Tuple2<Integer, String> girl) throws Exception {
+//
+//                        return new Tuple2<>(boy.f0,girl.f1);
+//                    }
+//                }).print("简单的inner join");
+        // 复杂的flat join
+        bupt_boy_src.join(bnu_girls_src).where(1).equalTo(0)
+                .with(new FlatJoinFunction<Tuple2<String, Integer>, Tuple2<Integer, String>, Tuple2<String,String>>() {
+                    @Override
+                    public void join(Tuple2<String, Integer> boys, Tuple2<Integer, String> girls, Collector<Tuple2<String, String>> collector) throws Exception {
+                        // 当输入输出不是一对一，出现了 1 对0 ，1对n，就要用flat操作，比如下面这个 有一定概率一对0 一堆n
+                        if (boys.f0.startsWith("xu")){
+                            collector.collect(new Tuple2<>(boys.f0,girls.f1));
+                        }
+                    }
+                }).print("flat类api操作，可以实现数据概率过滤");
+        
+        env.execute();
+
+    }
+
 
     @Test
     public void testUnion() throws Exception {
