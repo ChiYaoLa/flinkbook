@@ -5,8 +5,9 @@ log4j.appender.stdout.Target = System.out
 log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
 log4j.appender.stdout.layout.ConversionPattern = %-5p,[%l],%m%n
 
+
 log4j.appender.D = org.apache.log4j.DailyRollingFileAppender
-log4j.appender.D.File = /Users/xuliang98/Documents/java/iot/flink-book/flink-streaming/log/packageProgram.log
+#log4j.appender.D.File = /home/intsmaze/flink-dataset.log
 log4j.appender.D.DatePattern=.yyyy-MM-dd
 log4j.appender.D.Append = true
 log4j.appender.D.Threshold = INFO
@@ -14,7 +15,7 @@ log4j.appender.D.layout =  org.apache.log4j.PatternLayout
 log4j.appender.D.layout.ConversionPattern =%-d{yyyy-MM-dd HH:mm:ss},%-5p,[%t],[%l],%m%n
 
 log4j.appender.E = org.apache.log4j.DailyRollingFileAppender
-log4j.appender.E.File = /Users/xuliang98/Documents/java/iot/flink-book/flink-streaming/log/packageProgram-error.log
+#log4j.appender.E.File = /home/intsmaze/flink-dataset-error.log
 log4j.appender.E.DatePattern=.yyyy-MM-dd
 log4j.appender.E.Append = true
 log4j.appender.E.Threshold = ERROR

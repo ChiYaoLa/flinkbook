@@ -3,7 +3,11 @@ package com.intsmaze.flink.dataset.operator;
 import org.apache.flink.api.common.functions.*;
 import org.apache.flink.api.common.operators.Order;
 import org.apache.flink.api.java.ExecutionEnvironment;
+import org.apache.flink.api.java.aggregation.Aggregations;
+import org.apache.flink.api.java.functions.KeySelector;
+import org.apache.flink.api.java.operators.AggregateOperator;
 import org.apache.flink.api.java.operators.DataSource;
+import org.apache.flink.api.java.operators.MapOperator;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.util.Collector;
@@ -57,7 +61,10 @@ public class SetApiDemo {
                 return new Tuple3<>(s,s2,size);
             }
         }).print("cross 还可以自定义函数");
-        
+
+
+
+
         env.execute();
     }
 
@@ -105,6 +112,27 @@ public class SetApiDemo {
 
     }
 
+    @Test
+    public void testConnected(){
+        final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
+
+        DataSource<String> citysrc = env.fromCollection(cities);
+
+
+        List<Tuple3<String, Integer, Double>> list = new ArrayList<>();
+        list.add(new Tuple3<>("张三", 15, 999.9));
+        list.add(new Tuple3<>("张三", 30, 1899.0));
+        list.add(new Tuple3<>("张三", 21, 3000.89));
+        list.add(new Tuple3<>("李四", 31, 188.88));
+        list.add(new Tuple3<>("王五", 55, 99.99));
+        list.add(new Tuple3<>("王五", 67, 18.88));
+
+        DataSource<Tuple3<String, Integer, Double>> namesrc = env.fromCollection(list);
+        namesrc.groupBy(0).aggregate(Aggregations.MIN, 1);
+
+
+    }
+
 
     @Test
     public void testUnion() throws Exception {
@@ -114,6 +142,7 @@ public class SetApiDemo {
 
 //        namesrc.union(citysrc).print("默认union策略");
         namesrc.union(citysrc).union(namesrc).print("验证是否有去重效果：无去重效果");
+
         env.execute();
     }
 
@@ -204,6 +233,19 @@ public class SetApiDemo {
         // sort group 也可以与reduce-group连着用
         src.groupBy(1).sortGroup(0, Order.ASCENDING).first(1).print("sort group简单尝试"); // 相当于把每个组的第一个元素取出来
         env.execute();
+
+    }
+
+
+    public void testProjection(){
+        final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
+        ArrayList<Tuple3<String, Integer,String>> bupt_boys = new ArrayList<>();
+
+        bupt_boys.add(new Tuple3<>("xuliang",23,"@@"));
+        bupt_boys.add(new Tuple3<>("xl",25,"##"));
+        bupt_boys.add(new Tuple3<>("liangge",25,"#¥#¥#"));
+
+        DataSource<Tuple3<String, Integer, String>> src = env.fromCollection(bupt_boys);
 
     }
     

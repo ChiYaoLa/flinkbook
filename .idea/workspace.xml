@@ -7,9 +7,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f4ff7a1-01c6-4ce2-a2ce-db0b2f267f8c" name="Default Changelist" comment="sort group demo">
+    <list default="true" id="8f4ff7a1-01c6-4ce2-a2ce-db0b2f267f8c" name="Default Changelist" comment="join操作">
+      <change afterPath="$PROJECT_DIR$/flink-dataset/src/main/resources/log4j3.properties2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/AggregationsTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/AggregationsTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-dataset/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-dataset/target/classes/com/intsmaze/flink/dataset/operator/AggregationsTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/target/classes/com/intsmaze/flink/dataset/operator/AggregationsTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-dataset/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/connector/source/SourceTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/connector/source/SourceTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/connector/source/SourceTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +235,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606616759813" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/flink-streaming" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flink-streaming/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -238,13 +247,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flink-streaming/src/main/resources" />
+      <recent name="$PROJECT_DIR$/flink-dataset/src/main/resources" />
       <recent name="D:\develop\flink-book\flink-dataset\src\test\resources" />
       <recent name="D:\develop\flink-book\flink-dataset\src\main\resources" />
       <recent name="D:\develop\flink-book\flink-dataset\src\main\java" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.intsmaze.flink.query" />
-      <recent name="com.intsmaze.flink.streaming.window.time" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\develop1\flink-book" />
@@ -253,10 +260,14 @@
       <recent name="D:\develop\flink-book" />
       <recent name="D:\develop\flink-book\flink-sql\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.intsmaze.flink.query" />
+      <recent name="com.intsmaze.flink.streaming.window.time" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.SetApiDemo.testJoin">
-    <configuration name="CoGroupTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.CoGroupTemplate" />
+  <component name="RunManager" selected="JUnit.KafkaSourceTemplate.kafkaSourceTimestampsAndWatermarks">
+    <configuration name="AggregationsTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.AggregationsTemplate" />
       <module name="flink-dataset" />
       <extension name="coverage">
         <pattern>
@@ -281,65 +292,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JoinTemplate.testJoinWithJoinFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-dataset" />
+    <configuration name="KafkaSourceTemplate.kafkaSourceTimestampsAndWatermarks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flink-streaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
+          <option name="PATTERN" value="com.intsmaze.flink.streaming.connector.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.JoinTemplate" />
-      <option name="METHOD_NAME" value="testJoinWithJoinFunction" />
+      <option name="PACKAGE_NAME" value="com.intsmaze.flink.streaming.connector.source" />
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.connector.source.KafkaSourceTemplate" />
+      <option name="METHOD_NAME" value="kafkaSourceTimestampsAndWatermarks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetApiDemo.testCogroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-dataset" />
+    <configuration name="SourceTemplate.tsetCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flink-streaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
+          <option name="PATTERN" value="com.intsmaze.flink.streaming.connector.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
-      <option name="METHOD_NAME" value="testCogroup" />
+      <option name="PACKAGE_NAME" value="com.intsmaze.flink.streaming.connector.source" />
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.connector.source.SourceTemplate" />
+      <option name="METHOD_NAME" value="tsetCollection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetApiDemo.testGroupReduce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-dataset" />
+    <configuration name="SourceTemplate.tsetOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flink-streaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
+          <option name="PATTERN" value="com.intsmaze.flink.streaming.connector.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
-      <option name="METHOD_NAME" value="testGroupReduce" />
+      <option name="PACKAGE_NAME" value="com.intsmaze.flink.streaming.connector.source" />
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.connector.source.SourceTemplate" />
+      <option name="METHOD_NAME" value="tsetOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetApiDemo.testJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-dataset" />
+    <configuration name="SourceTemplate.tsetSocket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flink-streaming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
+          <option name="PATTERN" value="com.intsmaze.flink.streaming.connector.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
-      <option name="METHOD_NAME" value="testJoin" />
+      <option name="PACKAGE_NAME" value="com.intsmaze.flink.streaming.connector.source" />
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.connector.source.SourceTemplate" />
+      <option name="METHOD_NAME" value="tsetSocket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -347,11 +358,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SetApiDemo.testJoin" />
-        <item itemvalue="JUnit.JoinTemplate.testJoinWithJoinFunction" />
-        <item itemvalue="JUnit.SetApiDemo.testGroupReduce" />
-        <item itemvalue="JUnit.SetApiDemo.testCogroup" />
-        <item itemvalue="Application.CoGroupTemplate" />
+        <item itemvalue="JUnit.KafkaSourceTemplate.kafkaSourceTimestampsAndWatermarks" />
+        <item itemvalue="Application.AggregationsTemplate" />
+        <item itemvalue="JUnit.SourceTemplate.tsetOne" />
+        <item itemvalue="JUnit.SourceTemplate.tsetSocket" />
+        <item itemvalue="JUnit.SourceTemplate.tsetCollection" />
       </list>
     </recent_temporary>
   </component>
@@ -402,7 +413,9 @@
       <workItem from="1606613695867" duration="63000" />
       <workItem from="1606614846609" duration="1695000" />
       <workItem from="1612353361228" duration="8193000" />
-      <workItem from="1614137854392" duration="14902000" />
+      <workItem from="1614137854392" duration="20353000" />
+      <workItem from="1614389996247" duration="624000" />
+      <workItem from="1614480845791" duration="6643000" />
     </task>
     <task id="LOCAL-00001" summary="备份">
       <created>1596470102418</created>
@@ -642,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614163558859</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="join操作">
+      <created>1614167664679</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1614167664679</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -763,7 +783,8 @@
     <MESSAGE value="加入 cross笛卡尔 算子demo" />
     <MESSAGE value="加入  union Cogroup蒜子demo" />
     <MESSAGE value="sort group demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="sort group demo" />
+    <MESSAGE value="join操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="join操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
