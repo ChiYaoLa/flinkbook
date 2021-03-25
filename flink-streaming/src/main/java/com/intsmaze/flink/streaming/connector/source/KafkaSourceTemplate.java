@@ -45,11 +45,11 @@ public class KafkaSourceTemplate {
         env.setParallelism(2);
 
         Properties properties = new Properties();
-        properties.setProperty("bootstrap.servers", "192.168.19.201:9092");
-        properties.setProperty("group.id", "intsmaze");
+        properties.setProperty("bootstrap.servers", "localhost:9092");
+        properties.setProperty("group.id", "flinktest-xl");
 
         FlinkKafkaConsumer<String> kafkaConsumer = new FlinkKafkaConsumer<>(
-                "flink-intsmaze", new SimpleStringSchema(), properties);
+                "topic-demo", new SimpleStringSchema(), properties);
 
 
         kafkaConsumer.setStartFromGroupOffsets();
@@ -57,7 +57,7 @@ public class KafkaSourceTemplate {
         kafkaConsumer.setStartFromLatest();
 //		kafkaConsumer.setStartFromTimestamp(System.currentTimeMillis()-5000);
         DataStream<String> streamSource = env.addSource(kafkaConsumer);
-        streamSource.print("kafka data is:");
+        streamSource.print("flink-kafka data:");
 
         env.execute("sourceForKafka");
     }
@@ -82,11 +82,11 @@ public class KafkaSourceTemplate {
         String topic = "flink-intsmaze-two";
         FlinkKafkaConsumer<String> kafkaConsumer = new FlinkKafkaConsumer<>(
                 topic, new SimpleStringSchema(), properties);
-        Map<KafkaTopicPartition, Long> specificStartOffsets = new HashMap<>();
-
-        specificStartOffsets.put(new KafkaTopicPartition(topic, 0), 2L);
-        specificStartOffsets.put(new KafkaTopicPartition(topic, 1), 3L);
-        kafkaConsumer.setStartFromSpecificOffsets(specificStartOffsets);
+//        Map<KafkaTopicPartition, Long> specificStartOffsets = new HashMap<>();
+//
+//        specificStartOffsets.put(new KafkaTopicPartition(topic, 0), 2L);
+//        specificStartOffsets.put(new KafkaTopicPartition(topic, 1), 3L);
+//        kafkaConsumer.setStartFromSpecificOffsets(specificStartOffsets);
 
         DataStream<String> streamSource = env.addSource(kafkaConsumer);
         streamSource.print("kafka data is:");
@@ -163,7 +163,8 @@ public class KafkaSourceTemplate {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
         Properties properties = new Properties();
-        properties.setProperty("bootstrap.servers", "192.168.19.201:9092");
+//        properties.setProperty("bootstrap.servers", "192.168.19.201:9092");
+        properties.setProperty("bootstrap.servers", "localhost:9092");
         properties.setProperty("group.id", "intsmaze");
 
         FlinkKafkaConsumer<KafkaMess> kafkaConsumer = new FlinkKafkaConsumer<KafkaMess>(
@@ -193,3 +194,4 @@ public class KafkaSourceTemplate {
         env.execute("kafkaSourceTimestampsAndWatermarks");
     }
 }
+

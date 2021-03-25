@@ -74,9 +74,10 @@ public class ProcessWindowTemplate {
                 count++;
             }
 
-            System.out.println("窗口内元素为:" + str);
+
             KeyedStateStore keyedStateStore = context.globalState();
             KeyedStateStore keyedStateStore1 = context.windowState();
+            System.out.println("窗口内元素为:" + str+"globalState:"+keyedStateStore.toString());
             out.collect("Window: " + context.window() + " key:" + key + "  count: " + count);
         }
     }

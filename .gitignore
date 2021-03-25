@@ -1,0 +1,5 @@
+/flink-streaming/log/
+/flink-streaming/target/
+/flink-streaming/src/main/resources/CheckpointedFunctionTemplate/
+/flink-streaming/src/main/resources/rocksdbcheckpoint/
+/.idea/

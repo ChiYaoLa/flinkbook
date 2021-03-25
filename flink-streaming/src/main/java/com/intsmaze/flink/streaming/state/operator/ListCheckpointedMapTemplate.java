@@ -103,7 +103,7 @@ public class ListCheckpointedMapTemplate implements MapFunction<Long, String>,
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.enableCheckpointing(10000);
         env.setParallelism(2);
-        String path = "file:///home/intsmaze/flink/check/CheckpointedFunctionTemplate";
+        String path = "file:////Users/xuliang98/Documents/java/iot/flink-book/flink-streaming/src/main/resources/CheckpointedFunctionTemplate";
         FsStateBackend stateBackend = new FsStateBackend(path);
         env.setStateBackend(stateBackend);
         env.setRestartStrategy(RestartStrategies.failureRateRestart(

@@ -37,16 +37,16 @@ public class WindowsTemplate {
         KeyedStream<Tuple3<String, Integer, String>, Tuple> keyedStream = streamSource.keyBy("f0");
 
 //        WindowedStream<Tuple3<String, Integer, String>, Tuple, TimeWindow> windowedStream =keyedStream
-//                .window(TumblingProcessingTimeWindows.of(Time.seconds(3)));
+//                .window(TumblingProcessingTimeWindows.of(Time.seconds(10)));
 
 //        WindowedStream<Tuple3<String, Integer, String>, Tuple, TimeWindow> windowedStream =keyedStream
-//                .window(SlidingProcessingTimeWindows.of(Time.seconds(5),Time.seconds(3)));
+//                .window(SlidingProcessingTimeWindows.of(Time.seconds(10),Time.seconds(3)));
 
-//        WindowedStream<Tuple3<String, Integer, String>, Tuple, TimeWindow> windowedStream = keyedStream
-//                .window(ProcessingTimeSessionWindows.withGap(Time.seconds(8)));
+        WindowedStream<Tuple3<String, Integer, String>, Tuple, TimeWindow> windowedStream = keyedStream
+                .window(ProcessingTimeSessionWindows.withGap(Time.seconds(8)));
 
-        WindowedStream<Tuple3<String, Integer, String>, Tuple, GlobalWindow> windowedStream = keyedStream
-                .window(GlobalWindows.create()).trigger(CountTrigger.of(3));
+//        WindowedStream<Tuple3<String, Integer, String>, Tuple, GlobalWindow> windowedStream = keyedStream
+//                .window(GlobalWindows.create()).trigger(CountTrigger.of(3));
 
         windowedStream.sum("f1").print("窗口中元素求和结果");
 

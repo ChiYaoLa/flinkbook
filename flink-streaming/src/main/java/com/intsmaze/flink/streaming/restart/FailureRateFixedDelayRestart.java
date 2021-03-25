@@ -57,7 +57,7 @@ public class FailureRateFixedDelayRestart {
             env.setRestartStrategy(RestartStrategies.noRestart());
         } else if (restartStrategy.equals("enableCheckpoint")) {
             env.enableCheckpointing(2000);
-            String url = "file:///home/intsmaze/flink/check/rocksDB/";
+            String url = "file:///Users/xuliang98/Documents/java/iot/flink-book/flink-streaming/src/main/resources/rocksdbcheckpoint/";
             RocksDBStateBackend stateBackend = new RocksDBStateBackend(url, true);
             env.setStateBackend(stateBackend);
             env.getConfig().setExecutionRetryDelay(10000);
