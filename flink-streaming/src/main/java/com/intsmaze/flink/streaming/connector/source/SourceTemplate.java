@@ -41,7 +41,7 @@ public class SourceTemplate {
         list.add("List");
         env.fromCollection(list).print();
 
-        env.fromElements("Flink", "intsmaze").print();
+        env.fromElements("Flink", "发呆发呆").print();
 
         env.generateSequence(100, 101).print();
 

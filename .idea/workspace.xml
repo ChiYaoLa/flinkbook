@@ -7,9 +7,34 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f4ff7a1-01c6-4ce2-a2ce-db0b2f267f8c" name="Default Changelist" comment="sort group demo">
+    <list default="true" id="8f4ff7a1-01c6-4ce2-a2ce-db0b2f267f8c" name="Default Changelist" comment="many operator">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-streaming/flink-streaming (1).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/usages/PageRank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-dataset/src/main/java/com/intsmaze/flink/dataset/operator/SetApiDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/connector/source/KafkaSourceTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/connector/source/KafkaSourceTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/restart/FailureRateFixedDelayRestart.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/restart/FailureRateFixedDelayRestart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/state/operator/ListCheckpointedMapTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/state/operator/ListCheckpointedMapTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/window/process/ProcessWindowTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/window/process/ProcessWindowTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/window/process/windows/WindowsTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/window/process/windows/WindowsTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/window/time/EventTimeTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/src/main/java/com/intsmaze/flink/streaming/window/time/EventTimeTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/connector/source/KafkaSourceTemplate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/connector/source/KafkaSourceTemplate$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/connector/source/KafkaSourceTemplate$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/connector/source/KafkaSourceTemplate$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/connector/source/KafkaSourceTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/connector/source/KafkaSourceTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/restart/FailureRateFixedDelayRestart.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/restart/FailureRateFixedDelayRestart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/state/operator/ListCheckpointedMapTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/state/operator/ListCheckpointedMapTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/ProcessWindowTemplate$UserDefinedProcessWindowFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/ProcessWindowTemplate$UserDefinedProcessWindowFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/evitor/TumblingWindowEvitorTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/windows/WindowsTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/process/windows/WindowsTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/time/EventTimeTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-streaming/target/classes/com/intsmaze/flink/streaming/window/time/EventTimeTemplate.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +157,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="userSettingsFile" value="C:\develop\maven\apache-maven-3.0.5\repository\settings.xml" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../apache-maven-3.6.3/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -226,7 +251,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606616759813" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/flink-streaming" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flink-streaming/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -234,17 +259,15 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flink-streaming/src/main/resources" />
+      <recent name="$PROJECT_DIR$/flink-dataset/src/main/resources" />
       <recent name="D:\develop\flink-book\flink-dataset\src\test\resources" />
       <recent name="D:\develop\flink-book\flink-dataset\src\main\resources" />
       <recent name="D:\develop\flink-book\flink-dataset\src\main\java" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.intsmaze.flink.query" />
-      <recent name="com.intsmaze.flink.streaming.window.time" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\develop1\flink-book" />
@@ -253,14 +276,23 @@
       <recent name="D:\develop\flink-book" />
       <recent name="D:\develop\flink-book\flink-sql\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.intsmaze.flink.query" />
+      <recent name="com.intsmaze.flink.streaming.window.time" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.SetApiDemo.testJoin">
-    <configuration name="CoGroupTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.CoGroupTemplate" />
-      <module name="flink-dataset" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package -X" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.PageRank">
+    <configuration name="CustomSinkTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.connector.sink.CustomSinkTemplate" />
+      <module name="flink-streaming (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
+          <option name="PATTERN" value="com.intsmaze.flink.streaming.connector.sink.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -268,90 +300,98 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="FailureRateFixedDelayRestart" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.restart.FailureRateFixedDelayRestart" />
+      <module name="flink-streaming (1)" />
+      <option name="PROGRAM_PARAMETERS" value="--restartStrategy fixedDelayRestart --exceptionType programException" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageRank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.usages.PageRank" />
+      <module name="flink-streaming (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.intsmaze.flink.streaming.usages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProcessTemplate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.process.ProcessTemplate" />
+      <module name="flink-streaming (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.intsmaze.flink.streaming.process.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JoinTemplate.testJoinWithJoinFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-dataset" />
+    <configuration name="KafkaSourceTemplate.sourceForKafka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flink-streaming (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
+          <option name="PATTERN" value="com.intsmaze.flink.streaming.connector.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.JoinTemplate" />
-      <option name="METHOD_NAME" value="testJoinWithJoinFunction" />
+      <option name="PACKAGE_NAME" value="com.intsmaze.flink.streaming.connector.source" />
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.connector.source.KafkaSourceTemplate" />
+      <option name="METHOD_NAME" value="sourceForKafka" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetApiDemo.testCogroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-dataset" />
+    <configuration name="SideOutputTemplate.testSideOutput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flink-streaming (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
+          <option name="PATTERN" value="com.intsmaze.flink.streaming.sideoutput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
-      <option name="METHOD_NAME" value="testCogroup" />
+      <option name="PACKAGE_NAME" value="com.intsmaze.flink.streaming.sideoutput" />
+      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.streaming.sideoutput.SideOutputTemplate" />
+      <option name="METHOD_NAME" value="testSideOutput" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetApiDemo.testGroupReduce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-dataset" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
-      <option name="METHOD_NAME" value="testGroupReduce" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SetApiDemo.testJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-dataset" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.intsmaze.flink.dataset.operator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.intsmaze.flink.dataset.operator" />
-      <option name="MAIN_CLASS_NAME" value="com.intsmaze.flink.dataset.operator.SetApiDemo" />
-      <option name="METHOD_NAME" value="testJoin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.FailureRateFixedDelayRestart" />
+      <item itemvalue="Application.ProcessTemplate" />
+      <item itemvalue="Application.CustomSinkTemplate" />
+      <item itemvalue="JUnit.SideOutputTemplate.testSideOutput" />
+      <item itemvalue="JUnit.KafkaSourceTemplate.sourceForKafka" />
+      <item itemvalue="Application.PageRank" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SetApiDemo.testJoin" />
-        <item itemvalue="JUnit.JoinTemplate.testJoinWithJoinFunction" />
-        <item itemvalue="JUnit.SetApiDemo.testGroupReduce" />
-        <item itemvalue="JUnit.SetApiDemo.testCogroup" />
-        <item itemvalue="Application.CoGroupTemplate" />
+        <item itemvalue="Application.PageRank" />
+        <item itemvalue="JUnit.KafkaSourceTemplate.sourceForKafka" />
+        <item itemvalue="Application.CustomSinkTemplate" />
+        <item itemvalue="Application.ProcessTemplate" />
+        <item itemvalue="JUnit.SideOutputTemplate.testSideOutput" />
       </list>
     </recent_temporary>
   </component>
@@ -402,7 +442,21 @@
       <workItem from="1606613695867" duration="63000" />
       <workItem from="1606614846609" duration="1695000" />
       <workItem from="1612353361228" duration="8193000" />
-      <workItem from="1614137854392" duration="14902000" />
+      <workItem from="1614137854392" duration="20353000" />
+      <workItem from="1614389996247" duration="624000" />
+      <workItem from="1614480845791" duration="7668000" />
+      <workItem from="1614569991322" duration="630000" />
+      <workItem from="1614580321104" duration="1054000" />
+      <workItem from="1614681934581" duration="277000" />
+      <workItem from="1614838929184" duration="1810000" />
+      <workItem from="1615168200892" duration="1045000" />
+      <workItem from="1615272107595" duration="6675000" />
+      <workItem from="1615343060914" duration="598000" />
+      <workItem from="1615429764505" duration="9458000" />
+      <workItem from="1615524750242" duration="5570000" />
+      <workItem from="1615604893112" duration="37552000" />
+      <workItem from="1616519068572" duration="806000" />
+      <workItem from="1616675406115" duration="1157000" />
     </task>
     <task id="LOCAL-00001" summary="备份">
       <created>1596470102418</created>
@@ -642,7 +696,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614163558859</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="join操作">
+      <created>1614167664679</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1614167664679</updated>
+    </task>
+    <task id="LOCAL-00036" summary="many operator">
+      <created>1614525030497</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1614525030497</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -763,7 +831,9 @@
     <MESSAGE value="加入 cross笛卡尔 算子demo" />
     <MESSAGE value="加入  union Cogroup蒜子demo" />
     <MESSAGE value="sort group demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="sort group demo" />
+    <MESSAGE value="join操作" />
+    <MESSAGE value="many operator" />
+    <option name="LAST_COMMIT_MESSAGE" value="many operator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -100,8 +100,8 @@ public class EventTimeTemplate {
             };
 
             SingleOutputStreamOperator<EventBean> result = stream
-                    .windowAll(TumblingEventTimeWindows.of(Time.seconds(30)))
-                    .allowedLateness(Time.seconds(15))
+                    .windowAll(TumblingEventTimeWindows.of(Time.seconds(30))) //
+                    .allowedLateness(Time.seconds(5)) // 15改成5 缩小范围看延迟元素的输出
                     .sideOutputLateData(lateOutputTag)
                     .reduce((value1, value2) ->
                             {
